@@ -1,0 +1,172 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;/*la letra titulo*/
+   background-image: url(../imagenes/fondo-viaje.avif);
+    color: #333;
+    padding: auto;
+    margin: 8px;
+    background-repeat: no-repeat; /* Para que la imagen de fondo se ajuste y cubra completamente */
+    background-size: cover;
+   background-attachment: fixed;
+}
+
+header{
+    background-color: aquamarine;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+h1,h2{
+    text-align: center;
+    color: black;
+}
+nav{
+    background-color: #444;
+    padding: 10px;
+
+}
+nav ul{
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+nav li{
+    margin: 0 15px;/*agregar un margen  horizontal entre elementos*/
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue ;
+    font-weight: bold;/*establece el peso de la fuente en negrita*/
+}
+p{
+    text-align: center;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    size: 50px;
+}
+/*estilos para el cntenedor del carrusel*/
+#carrusel-container{
+    overflow: hidden;/*ocultar el desbordamiento del contenido del carrusel*/
+    position: relative;/*elemento de manera relativa*/
+}
+#carrusel{
+    display: flex;/*muestra los elementos del carrusel en linea */
+    animation: carruselAnimation 10s linear infinite;/*aplica animacion al carrusel*/
+}
+/*animacion del carrusel de imagenes*/
+@keyframes carruselAnimation{
+    
+    0%{
+        transform:translateX(0);/*sin desplazamiento al inicio*/
+    }
+    25%{
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(-100%);/*desplazamiento hasta la mitad*/
+    }
+    75%{
+        transform:translateX(-100%);/*sin desplazamientoen el tercer cuarto de la animacion*/
+    }
+    100%{
+        transform:translateX(0);/*sin desplazamiento al final de la animacion*/
+    }
+    
+}
+.producto{
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+img{
+    width: 600px;
+    height: 400px;
+}
+  
+
+.producto img{
+
+    max-width: 200px;/*hace que la imagen sea responsive*/
+    height: 200px;/*mantener la proporcion*/
+    margin-bottom: 10px;/*añadir a una imagen inferior entre la imagen y el texto*/
+    display: block;
+    margin-left: auto;
+    margin-left: auto;
+}
+footer{
+    background-color: #18a498;
+    color: #10cef4 ;
+    text-align: center;
+    padding: 10px;
+    /*position: absolute;*/
+    bottom: 0;/*alinear pie de pagina ala parte inferior*/
+    width: 100%;
+
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;/*alinear secion  pasar de una linea a otra*/
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.video-container{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+
+}
+.video-container video{
+    width: 300px;/*ancho*/
+    height: 300px;/*alto*/
+    object-fit: cover;
+    border: 1px solid #333;
+}
+.video-descipcition{
+    text-align: center;
+    margin-top: 10px;
+}
+form{
+    background-color: rgb(69, 160, 81);
+    padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0,0,0,0,5);
+  width: 400px;
+}
+label{
+    display: block;/*es el q se muestra en bloques*/
+    margin-bottom: 10px;
+}
+/*estilos para los campos de entrada input*/
+input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: content-box;/*relleno/en el ancho y alto input*/
+}
+/*estilo para el menu desplegable*/
+select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+/*estilo al boton*/
+button{
+    background-color: rgb(31, 33, 169);
+    color: black;
+    padding: 10px 15px;/*relleno interno*/
+    border-radius: 4px;
+    cursor: pointer;/*cambia el cursor a una mano al pasar sobre ella*/
+}
+button:hover{
+    background-color: #c2c726;/*cambia de color cuando el cursor pasa por encima*/
+    color: black;
+}
+
+

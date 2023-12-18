@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <title>FORMULARIOS de clientes</title>
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="medellin.html">MEDELLIN</a></li>
+            <li><a href="pereira.html">PEREIRA</a></li>
+            <li><a href="bogota.html">BOGOTA</a></li>
+            <li><a href="cali.html">CALI</a></li>
+            <li><a href="cartagena.html">CARTAGENA</a></li>
+            <li><a href="barranquilla.html">BARRANQUILLA</a></li>
+    
+        </ul>
+    </nav>
+
+</header>
+<body >
+   <center><h1>servicios</h1></center>
+    <center><form action="procesa.php " method="post">
+    <label for="nombre">NOMBRE</label>
+    <input type="text" id="nombre" name="nombre" placeholder="nombre" required>
+    <label for="apellido">APELLIDO</label>
+    <input type="text" id="apellido" name="apellido"  placeholder="apellido" required>
+    <label for="edad">EDAD</label>
+    <input type="number" id="edad" name="edad" placeholder="edad" required>
+    <label for="fecha">FECHA DE NACIMIENTO</label>
+    <input type="date" id="fecha" name="fecha" placeholder="fecha" required>
+    <label for="telefono">TELEFONO</label>
+    <input type="number" id="telefono" name="telefono" placeholder="telefono" required>
+    <label for="email">CORREO ELECTRONICO</label>
+    <input type="email" id="email" name="email" required>
+    <label for="ciudad">CIUDADES</label>
+    <select name="ciudad" id="ciudad" required>
+    <option value="">SELECIONE UNA CIUDAD</option>
+    <option value="mede">MEDELLIN</option>
+    <option value="per">PEREIRA</option>
+    <option value="ec">CARTAGENA</option>
+    <option value="cal">CALI</option>
+    <option value="bog">BOGOTA</option>
+    <option value="barr">BARRANQUILLA</option>
+ 
+    </select>   
+    <button class="boton-alumbrado">enviar</button>
+
+    </form>
+</body>
+<footer>
+    <P>&copy; 2023 sala de cine.todos los derechos reservados</P>
+</footer>
+</html>
